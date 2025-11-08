@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>25L-0706 Task3</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* makes form vertically centered */
+            background-color: blue;
+        }
+        form {
+            background: whitesmoke;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 355px;
+        }
+        h2 {
+            text-align: center;
+            color: aquamarine;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Buy a Cat</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your full name">
+
+        <label>Email:</label>
+        <input type="email" placeholder="example@lhr.nu.edu.pk">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password">
+
+        <label>Cat Gender:</label>
+        <div class="radio-group">
+            <input type="radio" name="Gender" value="male"> Male
+            <input type="radio" name="Gender" value="female"> Female
+        </div>
+
+        <label>Cat Personality:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" value="goofy"> Goofy
+            <input type="checkbox" value="cute"> Cute
+            <input type="checkbox" value="playful"> Playful
+        </div>
+        <label>Cat Species</label>
+        <select>
+            <option>--Select One--</option>
+            <option>Bengal Cat</option>
+            <option>British Shorthair</option>
+            <option>Scottish Fold</option>
+            <option>Maine Coon</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
